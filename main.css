@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Fonts */
+h1, h2, p, div, button {
+    font-family: Josefin Sans;
+    font-size: 1rem;
+}
+
+/* Universal */
+.invert {
+    filter: invert();
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-horizontal-16 {
+    display: flex;
+    gap: 16px;
+}
+
+/* Home Page */
+
+/* Layout */
+body {
+    height: 100vh;
+    background: radial-gradient(80.42% 80.42% at 50% 0%, rgb(14, 53, 98) 0%, #030316 99.29%);
+    overflow-y: hidden;
+}
+/* .background {
+  --size: 85%;
+  min-height: 100vh;
+  
+  background:
+    radial-gradient(circle at calc(50% + var(--mouseX)) calc(100% + var(--mouseY)), rgba(14, 53, 98) 0%, rgba(68, 0, 255, 0) var(--size)),
+    radial-gradient(circle at calc(0% + var(--mouseX)) calc(0% + var(--mouseY)), rgb(3, 23, 46) 0%, rgba(0,255,0,0) var(--size)),
+    radial-gradient(circle at calc(100% + var(--mouseX)) calc(0% + var(--mouseY)), rgb(0, 49, 105) 0%, rgb(7, 7, 95) var(--size));
+} */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 16px;
+    margin: 48px;
+}
+/* Navbar */
+.nav-container {
+    grid-column: span 12;
+    height: 40px;
+}
+.nav-content {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 16px;
+}
+.nav-expanded {
+    justify-content: space-between;
+}
+.nav-content > div:nth-child(1) {
+    display: flex;
+    gap: 48px;
+}
+.nav-content > div:nth-child(2) {
+    display: flex;
+    gap: 16px;
+}
+.nav-logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #F7CA47;
+    text-decoration: none;
+}
+/* Content */
+.content-main {
+    grid-column: col-start 4 / span 6;
+    gap: 40px;
+    margin-top: 80px;
+}
+.container-secondary {
+    gap: 16px;
+}
+.container-secondary:nth-child(3) > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-top-artists {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Components */
+.btn {
+    display: flex;
+    align-items: center;
+    background: #282828;
+    color: white;
+    padding: 10px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    gap: 8px;
+    white-space: nowrap;
+}
+.dropbtn {
+    gap: 8px;
+}
+.h1-title {
+    font-family: Josefin Sans;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 128px;
+    text-align: center;
+    background: linear-gradient(97.53deg, #F7CA47 -1.61%, #C28000 97.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.h2-title {
+    font-size: 20px;
+    color: white;
+}
+/* Searchbar */
+#home-element-2 input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 24px;
+    display: flex;
+    padding-left: 16px;
+    font-family: Josefin Sans;
+    font-size: 1rem;
+    color: #4A4A4A;
+}
+/* Artist Components */
+.img-placeholder-sm {
+    width: 24px;
+    height: 24px;
+    border-radius: 36px;
+    background: #F7CA47;
+}
+.img-placeholder-lg {
+    width: 80px;
+    height: 80px;
+    border-radius: 36px;
+    background: #F7CA47;
+}
+.btn-artist {
+    background: none;
+    border: none;
+    text-align: left;
+    gap: 16px;
+    cursor: pointer;
+}
+.artistButtonText {
+    color: white;
+}
+
+/* Artist Popup */
+.container-artist-popup {
+    position: fixed;
+    background: radial-gradient(100% 100% at 100% 0%, rgba(238, 120, 50, 0.664) 4.17%, rgba(34, 34, 34, 0.72) 71.62%, rgba(0, 0, 0, 0.72) 100%);
+    height: 95vh;
+    padding: 24px;
+    gap: 24px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    backdrop-filter: blur(25px);
+    width: 550px;
+    overflow-y: scroll !important; 
+}
+.artist-basic-info {
+    gap: 16px;
+}
+.artist-image {
+    width: 118px;
+    height: 118px;
+    background: white;
+    border-radius: 80px;
+}
+.artist-name {
+    font-size: 32px;
+    color: white;
+}
+/* Popular songs */
+.artist-popular-songs {
+    color: white;
+}
+.container-artists-songs {
+    gap: 16px;
+}
+.artist-song {
+    align-items: center;
+    height: 36px;
+}
+.artist-song > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.artist-song > div:nth-child(2) {
+    display: flex;
+    gap: 48px;
+    color: #C8C8C8;
+}
+.album-cover-sm {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 4px;
+}
+.song-name > img:nth-child(2) {
+    width: 14px;
+    background-color: white;
+    height: 14px;
+    border-radius: 4px;
+}
+/* Discography */
+.container-albums {
+    display: flex;
+    gap: 32px;
+    overflow-x: scroll;
+    height: 206px;
+}
+.album {
+    gap: 16px;
+    color: white;
+}
+.album-cover-lg {
+    width: 128px;
+    height: 128px;
+    border-radius: 4px;
+    background-color: white;
+}
+.album-name {
+    font-weight: 600px;
+}
+.album-year {
+    color: #C8C8C8;
+    font-size: 14px;
+    margin-top: -8px;
+}
+
+

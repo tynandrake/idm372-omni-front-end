@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Omni</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="background style="--mouseX: 0%; --mouseY: 0%;">
+    <div class="container">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="user-button">
+                    
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="btn dropbtn">
+                            <img src="images/logos_spotify-icon.svg">
+                            <span>aidanty23</span>
+                            <img src="images/akar-icons_chevron-down.svg">
+                        </button>
+                        <!-- <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Link 1</a>
+                        </div> -->
+                    </div>
+                </div>
+                <button onclick="myFunction()" class="btn dropbtn">
+                    <img src="images/bx_help-circle.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="content-main flex-column">
+            <div class="container-secondary flex-column">
+                <div class="title">
+                    <h1 class="h1-title">Omni</h1>
+                </div>
+                <form id="home-element-2">
+                    <input type="text" id="query" placeholder="Search for an artist to discover similar artists">
+                    <!-- <button id="submit">Draw Graph</button> -->
+                </form>
+            </div>
+            <div class="container-secondary flex-column">
+                <h2 class="h2-title">Recently played</h2>
+                <div class="artist-grid">
+                    <button class="btn">
+                        <img src="#" alt="" class="img-placeholder-sm">
+                        <p class="artistButtonText">The Weeknd</p>
+                    </button>
+                </div>
+            </div>
+            <div class="container-secondary flex-column">
+                <div>
+                    <h2 class="h2-title">Top artists</h2>   
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="btn dropbtn">
+                            <span>Last 30 days</span>
+                            <img src="images/akar-icons_chevron-down.svg">
+                        </button>
+                        <!-- <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Link 1</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="container-top-artists">
+                    <button class="btn-artist flex-column">
+                        <img src="#" alt="" class="img-placeholder-lg">
+                        <p class="artistButtonText">Nas</p>
+                    </button>
+                    <button class="btn-artist flex-column">
+                        <img src="#" alt="" class="img-placeholder-lg">
+                        <p class="artistButtonText">Nas</p>
+                    </button>
+                    <button class="btn-artist flex-column">
+                        <img src="#" alt="" class="img-placeholder-lg">
+                        <p class="artistButtonText">Nas</p>
+                    </button>
+                    <button class="btn-artist flex-column">
+                        <img src="#" alt="" class="img-placeholder-lg">
+                        <p class="artistButtonText">Nas</p>
+                    </button>
+                    <button class="btn-artist flex-column">
+                        <img src="#" alt="" class="img-placeholder-lg">
+                        <p class="artistButtonText">Nas</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="js-main.js"></script>
+</html>
