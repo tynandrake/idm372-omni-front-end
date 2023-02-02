@@ -30,7 +30,7 @@ h1, h2, p, div, button {
 /* Layout */
 body {
     height: 100vh;
-    background: radial-gradient(80.42% 80.42% at 50% 0%, rgb(14, 53, 98) 0%, #030316 99.29%);
+    background: radial-gradient(55.57% 55.57% at 50% 44.43%, #195398 0%, #030316 99.29%);
     overflow-y: hidden;
 }
 /* .background {
@@ -71,7 +71,7 @@ body {
     gap: 16px;
 }
 .nav-logo {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     color: #F7CA47;
     text-decoration: none;
@@ -108,9 +108,23 @@ body {
     cursor: pointer;
     gap: 8px;
     white-space: nowrap;
+    transition: .2s;
+}
+.btn:hover {
+    background: #494949;
+}
+.btn:active {
+    background: #ffffff;
+    color: #282828;
+}
+.btn:active .icon {
+    filter: invert();
 }
 .dropbtn {
     gap: 8px;
+}
+.logo {
+    margin: 0 auto;
 }
 .h1-title {
     font-family: Josefin Sans;
@@ -126,6 +140,7 @@ body {
 .h2-title {
     font-size: 20px;
     color: white;
+    font-weight: 600;
 }
 /* Searchbar */
 #home-element-2 input{
@@ -195,21 +210,31 @@ body {
     color: white;
 }
 .container-artists-songs {
-    gap: 16px;
+    margin: 0 -8px;
 }
+
 .artist-song {
     align-items: center;
-    height: 36px;
+    height: 52px;
+    border-radius: 8px;
 }
 .artist-song > div:nth-child(1) {
     display: flex;
     align-items: center;
     gap: 16px;
+    padding-left: 8px;
 }
 .artist-song > div:nth-child(2) {
     display: flex;
     gap: 48px;
     color: #C8C8C8;
+    padding-right: 24px;
+}
+.artist-song:hover {
+    background: rgba(61, 61, 61, 0.5);
+}
+.artist-song:active {
+    background: rgba(95, 95, 95, 0.5);
 }
 .album-cover-sm {
     width: 36px;
