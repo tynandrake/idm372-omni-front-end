@@ -7,6 +7,10 @@ h1, h2, p, div, button {
     font-family: Josefin Sans;
     font-size: 1rem;
 }
+button {
+    background: none;
+    border: none;
+}
 
 /* Universal */
 .invert {
@@ -80,9 +84,10 @@ body {
 .content-main {
     grid-column: col-start 4 / span 6;
     gap: 40px;
-    margin-top: 80px;
+    margin-top: 160px;
 }
 .container-secondary {
+    display: grid;
     gap: 16px;
 }
 .container-secondary:nth-child(3) > div:nth-child(1) {
@@ -102,7 +107,7 @@ body {
     align-items: center;
     background: #282828;
     color: white;
-    padding: 10px;
+    padding: 8px 16px;
     border-radius: 24px;
     border: none;
     cursor: pointer;
@@ -151,8 +156,11 @@ body {
     display: flex;
     padding-left: 16px;
     font-family: Josefin Sans;
-    font-size: 1rem;
-    color: #4A4A4A;
+    font-size: 20px;
+    color: #282828;
+}
+#home-element-2 input::placeholder{
+    color: #C8C8C8;
 }
 /* Artist Components */
 .img-placeholder-sm {
@@ -182,8 +190,7 @@ body {
 .container-artist-popup {
     position: fixed;
     background: radial-gradient(100% 100% at 100% 0%, rgba(238, 120, 50, 0.664) 4.17%, rgba(34, 34, 34, 0.72) 71.62%, rgba(0, 0, 0, 0.72) 100%);
-    height: 95vh;
-    padding: 24px;
+    height: 100vh;
     gap: 24px;
     top: 0;
     right: 0;
@@ -192,32 +199,42 @@ body {
     width: 550px;
     overflow-y: scroll !important; 
 }
+.artist-popup-navbar {
+    padding: 32px 24px 0 24px;
+}
 .artist-basic-info {
     gap: 16px;
+    padding: 0 24px;
 }
 .artist-image {
-    width: 118px;
-    height: 118px;
+    width: 112px;
+    height: 112px;
     background: white;
     border-radius: 80px;
 }
 .artist-name {
     font-size: 32px;
+    line-height: 32px;
     color: white;
 }
 /* Popular songs */
 .artist-popular-songs {
     color: white;
+    padding: 0 16px;
+}
+.artist-popular-songs > h2:nth-child(1) {
+    padding: 0 8px;
+    margin-bottom: 8px;
 }
 .container-artists-songs {
-    margin: 0 -8px;
+    margin: 0;
 }
-
 .artist-song {
     align-items: center;
     height: 52px;
     border-radius: 8px;
 }
+
 .artist-song > div:nth-child(1) {
     display: flex;
     align-items: center;
@@ -249,6 +266,11 @@ body {
     border-radius: 4px;
 }
 /* Discography */
+.container-artist-discography {
+    gap: 24px;
+    padding: 0 24px 24px 24px;
+    margin-top: -8px;
+}
 .container-albums {
     display: flex;
     gap: 32px;

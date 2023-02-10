@@ -18,13 +18,13 @@
                         <h3>Omni</h3>
                     </a>
                     <button onclick="myFunction()" class="btn">
-                        <img src="images/search-med.svg" class="icon">
+                        <img src="images/light-search-md.svg" class="icon">
                         <span>Search</span>
                     </button>
                 </div>
                 <div>
                     <button onclick="myFunction()" class="btn dropbtn">
-                        <img src="images/akar-icons_settings-vertical.svg" class="icon">
+                        <img src="images/light-down-md.svg" class="icon">
                     </button>
                     <div class="dropdown">
                         <button onclick="myFunction()" class="btn dropbtn">
@@ -45,13 +45,13 @@
         
     </div>
     <div class="container-artist-popup flex-column">
-        <div class="flex-between">
-            <button onclick="myFunction()" class="btn">
-                <img src="images/material-symbols_close.svg" class="icon">
+        <div class="flex-between artist-popup-navbar">
+            <button onclick="myFunction()" >
+                <img src="images/dark-close-lg.svg" class="icon">
             </button>
             <button onclick="myFunction()" class="btn">
                 <span>Open on Spotify</span>
-                <img src="images/spotify.svg" class="icon">
+                <img src="images/light-spotify-md.svg" class="icon">
             </button>
         </div>
         <div class="artist-basic-info flex-column">
@@ -59,16 +59,16 @@
             <h4 class="artist-name">Artist Name</h4>
             <div class="flex-horizontal-16">
                 <button onclick="myFunction()" class="btn">
-                    <img src="images/overview.svg" class="icon">
+                    <img src="images/light-overview-md.svg" class="icon">
                     <span>Overview</span>
                 </button>
                 <button onclick="myFunction()" class="btn">
-                    <img src="images/user.svg" class="icon">
+                    <img src="images/light-user-md.svg" class="icon">
                     <span>About</span>
                 </button>
             </div>
         </div>
-        <div class="artist-popular-songs container-secondary flex-column">
+        <div class="artist-popular-songs flex-column">
             <h2 class="h2-title">Popular Songs</h2>
             <div class="container-artists-songs flex-column">
                 <div class="artist-song flex-between">
@@ -136,23 +136,38 @@
                         <p>3:33</p>
                     </div>
                 </div>
+                <div class="artist-song flex-between">
+                    <div>
+                        <img src="#" alt="" class="album-cover-sm">
+                        <div class="song-name">
+                            <p>Song name</p>
+                            <img src="#" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>1,000,000,000</p>
+                        <p>3:33</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container-secondary flex-column">
-            <h2 class="h2-title">Discography</h2>
-            <div class="flex-horizontal-16">
-                <button onclick="myFunction()" class="btn">
-                    <img src="images/album.svg" class="icon">
-                    <span>Albums</span>
-                </button>
-                <button onclick="myFunction()" class="btn">
-                    <img src="images/music.svg" class="icon">
-                    <span>Singles & EPs</span>
-                </button>
-                <button onclick="myFunction()" class="btn">
-                    <img src="images/playlist.svg" class="icon">
-                    <span>Playlists</span>
-                </button>
+        <div class="flex-column container-artist-discography">
+            <div class="container-secondary">
+                <h2 class="h2-title">Discography</h2>
+                <div class="flex-horizontal-16">
+                    <button onclick="myFunction()" class="btn">
+                        <img src="images/light-album-md.svg" class="icon">
+                        <span>Albums</span>
+                    </button>
+                    <button onclick="myFunction()" class="btn">
+                        <img src="images/light-music-md.svg" class="icon">
+                        <span>Singles & EPs</span>
+                    </button>
+                    <button onclick="myFunction()" class="btn">
+                        <img src="images/light-playlist-md.svg" class="icon">
+                        <span>Playlists</span>
+                    </button>
+                </div>
             </div>
             <div class="container-albums">
                 <div class="album flex-column">
